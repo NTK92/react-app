@@ -1,0 +1,12 @@
+.custom-sidebar {
+    padding: 20px;
+    height: 92vh;
+    background-color: #ffa87a;
+    padding-right: 3rem;
+}
+
+@media screen and (max-width: 568px) {
+    .custom-sidebar {
+        height: auto;
+    }
+}
