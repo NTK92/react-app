@@ -1,9 +1,0 @@
-.sidebar-block {
-  width: min-content ;
-}
-
-@media (max-width: 568px) {
-  .sidebar-block {
-    width: 100% !important;
-  }
-}
