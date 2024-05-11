@@ -5,18 +5,16 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { Container, Row, Col } from 'react-bootstrap';
 import routes from './shared/routes';
 import FinanceProvider from './shared/FinanceContext';
-import store from './shared/store';
 import './App.css'
 
 const App: React.FC = () => {
-  console.log(store.getState());
   return (
     <FinanceProvider>
       <Router>
           <Container fluid>
             <Row>
               <Col className='d-flex' style={{padding:'15px', backgroundColor: '#ff6f32'}} >
-                <img className='me-2 mb-2' src='/investment-analysis-icon.svg' width={'50px'}/>
+                <img className='me-2 mb-2' src={process.env.PUBLIC_URL + '/img/investment-analysis-icon.svg'} width={'50px'}/>
                 <h2>Finance control</h2>
               </Col>
             </Row>

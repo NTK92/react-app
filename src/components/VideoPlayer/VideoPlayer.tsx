@@ -23,7 +23,7 @@ const VideoPlayer: React.FC = () => {
       {isPlaying && (
         <div className="video-layout" onClick={closeVideo}>
             <video className="video-player" controls autoPlay onClick={stopPropagation}> 
-                <source src="/finance.mp4" type="video/mp4" />Your browser does not support the video tag.
+                <source src={process.env.PUBLIC_URL + '/img/finance.mp4'} type="video/mp4" />Your browser does not support the video tag.
             </video>
         </div>
       )}
